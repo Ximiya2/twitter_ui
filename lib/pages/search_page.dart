@@ -13,21 +13,30 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         actions: [
-          Row(
-            children: [
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/image/photo_2023-01-25_19-56-19 (2).jpg'),
-              ),
-              TextField(
-                decoration: InputDecoration(
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50.0),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/image/photo_2023-01-25_19-56-19 (2).jpg'),
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50.0),
+                    ),
                   ),
                 ),
-              ),
-              Icon(Icons.settings),
-            ],
+                IconButton(
+                  onPressed: (){
+                    //Navigator.pushNamed(context, '/')
+                  },
+                    icon: Icon(Icons.settings)
+                ),
+              ],
+            ),
           )
         ],
       ),

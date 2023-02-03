@@ -2,7 +2,7 @@ import 'models/tweet_model.dart';
 
 List<TweetModel> posts = [
   TweetModel(
-      userImage: "assets/images/Martha.png",
+      userImage: "assets/image/photo_2023-01-25_19-56-15.jpg",
       userName: "Martha Craig",
       nickName: "@craig_love",
       tweetTime: "12h",
@@ -15,7 +15,7 @@ List<TweetModel> posts = [
       actionIcon: "assets/icons/heart.svg",
       actionUserNameList: ["Kieron Dotson", "Zack John"]),
   TweetModel(
-      userImage: "assets/images/Joshua.png",
+      userImage: "assets/image/photo_2023-01-25_19-56-15 (2).jpg",
       userName: "Joshua Lawrence",
       nickName: "@l_joshua",
       tweetTime: "3h",
@@ -27,7 +27,7 @@ List<TweetModel> posts = [
       actionIcon: "assets/icons/heart.svg",
       actionUserNameList: ["Zack John"]),
   TweetModel(
-      userImage: "assets/images/Martin.png",
+      userImage: "assets/image/photo_2023-01-25_19-56-15 (3).jpg",
       userName: "Martin Randolph",
       isOfficialAccount: true,
       nickName: "@martin_randolph",
@@ -40,12 +40,12 @@ List<TweetModel> posts = [
       actionIcon: "assets/icons/comment.svg",
       actionUserNameList: ["Kieron Dotson"]),
   TweetModel(
-      userImage: "assets/images/Andrew.png",
+      userImage: "assets/image/photo_2023-01-25_19-56-16.jpg",
       userName: "Andrew Parker",
       nickName: "@andrew_parker",
       tweetTime: "10h",
       textContent: "The Blues are back this weekend 🙌",
-      contentImage: "assets/images/Tuchel.jpg",
+      contentImage: "assets/image/photo_2023-01-25_19-56-19 (2).jpg",
       commentNumber: 7,
       retweetNumber: 1,
       likeNumber: 11,

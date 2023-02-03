@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:twitter/pages/setting_page.dart';
 import '../items/post_item.dart';
 import '../states.dart';
 
@@ -13,7 +14,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,17 +26,25 @@ class _HomePageState extends State<HomePage> {
           width: 20,
           child: const CircleAvatar(
             radius: 5,
-            backgroundImage: AssetImage("assets/images/Profile.png"),
+            backgroundImage: AssetImage("assets/image/photo_2023-01-25_19-56-17 (2).jpg"),
           ),
         ),
         title: Image.asset(
-          "assets/images/logo.png",
+          "assets/image/photo_2023-01-25_19-56-18.jpg",
           height: 50,
         ),
         centerTitle: true,
         actions: [
-          SvgPicture.asset("assets/icons/action.svg"),
-          const SizedBox(width: 21)
+          InkWell(
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingPage()),
+              );
+            },
+            child: SvgPicture.asset('assets/icons/action.svg'),
+          ),
+          SizedBox(width: 21,),
         ],
       ),
       body: ListView.builder(
@@ -44,20 +52,9 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, index){
             return postTweet(context,posts[index]);
           }),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.transparent,
-        items: [
-          BottomNavigationBarItem(icon: SvgPicture.asset("assets/icons/home.svg"),label: ''),
-          BottomNavigationBarItem(icon: SvgPicture.asset("assets/icons/search.svg"),label: ''),
-          BottomNavigationBarItem(icon: SvgPicture.asset("assets/icons/bell.svg"),label: ''),
-          BottomNavigationBarItem(icon: SvgPicture.asset("assets/icons/mail.svg"),label: ''),
-        ],
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: SvgPicture.asset("assets/icons/add.svg"),
-
       ),
     );
   }
