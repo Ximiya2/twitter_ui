@@ -13,7 +13,6 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),

@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:twitter/pages/pochta_page.dart';
 import 'package:twitter/pages/search_page.dart';
 import 'package:twitter/pages/setting_page.dart';
-
 import 'home_page.dart';
 import 'notification_page.dart';
 

@@ -70,7 +70,6 @@ class _SettingPageState extends State<SettingPage> {
                     ],
                   ),
                 ),
-
                 Switch(
                     value: switchLocationValue,
                     onChanged: (val){
@@ -178,7 +177,7 @@ class _SettingPageState extends State<SettingPage> {
                         },
                         child: Text('Delete'),),
                   ),
-                  PopupMenuItem(
+                  const PopupMenuItem(
                     value: 'Edit',
                     child: Text('Edit'),
                   ),
